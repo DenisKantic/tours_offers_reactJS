@@ -7,3 +7,9 @@
 body{
   min-height: 100vh;
 }
+
+/* loading file */ 
+
+.loading{
+  font-size: 3em;
+}
