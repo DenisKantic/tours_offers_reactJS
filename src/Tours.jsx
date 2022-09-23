@@ -4,7 +4,6 @@ import Tour from "./Tour";
 const Tours = ({tours}) => {
     return ( 
         <div className="main">
-        <h1>Tours</h1>
        
        {tours.map((tour)=>{
         return (
