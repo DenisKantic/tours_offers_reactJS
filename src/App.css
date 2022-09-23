@@ -6,10 +6,25 @@
 
 body{
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* loading file */ 
 
 .loading{
   font-size: 3em;
+}
+
+.main{
+  height: 500px;
+  width: 100%;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.container{
+  margin-top: 40px;
+  width: 700px;
 }

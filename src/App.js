@@ -1,6 +1,7 @@
 import './App.css';
 import {useState, useEffect} from 'react';
 import Loading from './Loading';
+import Tours from './Tours';
 
 const url = 'https://course-api.com/react-tours-project';
 
@@ -14,7 +15,7 @@ function App() {
     setLoading(true);
     const response = await fetch(url);
     const tours = await response.json();
-    console.log(tours);
+    setTours(tours);
     setLoading(false);
     
   }
@@ -32,7 +33,9 @@ if(loading){
 
 
   return (
-    <h1>Test</h1>
+    <div className="container">
+    <Tours tours={tours}></Tours>
+    </div>
   );
 }
 
